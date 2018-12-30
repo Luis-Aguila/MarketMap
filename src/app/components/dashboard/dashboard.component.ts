@@ -15,6 +15,8 @@ export class DashboardComponent implements OnInit {
     auth.handleAuthentication();
    }
 
+
+
   ngOnInit() {
   }
   salir() {

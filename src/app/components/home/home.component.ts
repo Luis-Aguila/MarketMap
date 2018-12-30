@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 
-
 import { AuthService } from '../../services/auth.service';
+
+
+
 
 
 @Component({
@@ -12,15 +14,21 @@ import { AuthService } from '../../services/auth.service';
 })
 export class HomeComponent implements OnInit {
 
+
+
   constructor( private router: Router , private auth: AuthService) {
     auth.handleAuthentication();
   }
 
-  ngOnInit() {
-  }
+
+  ngOnInit() {}
+
 
   login() {
     this.auth.login();
   }
+
+
+
 
 }

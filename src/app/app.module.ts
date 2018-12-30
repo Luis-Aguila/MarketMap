@@ -11,6 +11,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 import { AuthService } from './services/auth.service';
@@ -24,7 +27,10 @@ import { AuthGuardService } from './services/auth-guard.service';
     NavbarComponent,
     LoginComponent,
     RegistroComponent,
-    DashboardComponent
+    DashboardComponent,
+    NosotrosComponent,
+    ServiciosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
