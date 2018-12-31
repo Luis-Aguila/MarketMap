@@ -1,7 +1,7 @@
 <section class="bienvenidos">
     <header class="encabezado fixed-top" role="banner" id="encabezado">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a [routerLink]="['/home']" class="logo">
                 <img src="../../../assets/img/logo.png" width="40px" height="30px" alt="Logo del titulo">
             </a>
             <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
@@ -20,8 +20,8 @@
                 <ul routerLinkActive="active">
                     <li class="active"><a [routerLink]="['/home']">Inicio</a></li>
                     <li><a [routerLink]="['/nosotros']">Nosotros</a></li>
-                    <li><a href="#">Servicio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a [routerLink]="['/servicios']">Servicios</a></li>
+                    <li><a [routerLink]="['/contacto']">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="flecha-bajar text-center">
-        <a data-scroll href="#agencia">
+        <a data-scroll href="home#agencia">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
     </div>
@@ -195,6 +195,6 @@
         </ul>
     </div>
 </footer>
-<a class="ir-arriba" data-scroll href="#encabezado">
+<a class="ir-arriba" data-scroll href="home#encabezado">
     <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>
 </a>

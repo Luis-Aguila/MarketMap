@@ -1,0 +1,179 @@
+<div class="paginas-internas">
+    <section class="bienvenidos">
+        <header class="encabezado fixed-top" role="banner" id="encabezado">
+            <div class="container">
+                <a [routerLink]="['/home']" class="logo">
+                    <img src="../../../assets/img/logo.png" width="40px" height="30px" alt="Logo del titulo">
+                </a>
+                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+                 </button>
+                <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <form action="#" id="bloque-buscar" class="collapse">
+                    <div class="contenedor-bloque-buscar">
+                        <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
+                <nav id="menu-principal" class="collapse">
+                    <ul routerLinkActive="active">
+                        <li><a [routerLink]="['/home']">Inicio</a></li>
+                        <li><a [routerLink]="['/nosotros']">Nosotros</a></li>
+                        <li class="active"><a [routerLink]="['/servicios']">Servicios</a></li>
+                        <li><a [routerLink]="['/contacto']">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+        <div class="texto-encabezado text-center">
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">Servicios</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">Publicamos y mostramos tu empresa al mundo.</p>
+            </div>
+        </div>
+    </section>
+    <section class="ruta py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <a [routerLink]="['/home']">Inicio</a> » Servicios
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="py-1 lista-servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="item-servicios">
+                        <i class="fa fa-bullseye" aria-hidden="true"></i>
+                        <h4>Publicación de Negocios y Pymes</h4>
+                        <p>Si tienes un emprendimiento y quieres llegar a más personas, publicamos tu negocio en nuestro sistema ofreciendote un perfil para que publiques lo que desees.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#servicio1">Más Información</a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="item-servicios">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <h4>Visualización de Negocios</h4>
+                        <p>Si no tienes un negocio, pero necesitas encontrarlos, te ofrecemos visualizar todos los negocios que se encuentren dentro de tu zona y buscar los que necesites.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#servicio2">Más Información</a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="item-servicios">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <h4>Geolocalización para tu negocio</h4>
+                        <p>Con nuestro sistema de geolocalización, todos sabrán donde ofreces tus productos y cuales son tus ofertas, atrayendo un mayor numero de clientes.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#servicio3">Más Información</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="piedepagina" role="contentinfo">
+        <div class="container">
+            <p>2018 © MARKETMAP Todos los derechos reservados</p>
+            <ul class="redes-sociales">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <a class="ir-arriba" data-scroll href="servicios#encabezado"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></a>
+
+
+
+
+    <!--Modal 1-->
+    <div class="modal fade" id="servicio1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Publicación de Negocios y Pymes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            Nuestro sistema esta pensado para la publicación y geolocalización de pequeños y medianos negocios o servicios, acá tu podras crear un perfil de tu negocio, en donde podras administrar los horarios de atención, tus futuras ofertas y todo lo relacionado
+                            con tu negocio, Tú decides que es lo quieres mostras y que es lo que deseas publicitar, a su vez, nuestro servicio cuenta con un sistema de geolocalización, en donde tu podras publicar la ubicación de tu negocio en nuestro
+                            sistema de mapas, para que tus futuros clientes sepan donde y como llegar...Atrevete!!!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../../../assets/img/servicio-1.svg" alt="" class="img-fluid m-x-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal 2-->
+    <div class="modal fade" id="servicio2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Visualización de Negocios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            En nuestro sistema, podras visualizar todos los negocios que buscas...Buscas mercaderia?, herramientas?, Vestuario?...todo lo encontras aquí, y mediante nustros sistema de mapas, podemos darte la ubicación exacta de estas tiendas y asi encontraras lo
+                            que andas buscando y en menor tiempo posible...Animate!!!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../../../assets/img/servicio-2.svg" alt="" class="img-fluid m-x-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal 3-->
+    <div class="modal fade" id="servicio3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Geolocalización para tu Negocio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            Nuestro sistema de publicación, cuenta con todo lo necesario para que tu empresa o negocio pueda cumplir sus metas economicas. Como empresa, sabemos que mientras manejes una mayor cartera de clientes, más beneficios podras tener, para este objetivo contamos
+                            con un sistema de mapas en donde tu podras colocar la ubicación de tu negocio de manera exacta e independiente de donde este se ubique, de esta manera, muchos usuarios podran ver donde te encuentras y podras expandir tu frontera
+                            de clientes. Para que conformarte con solo tu calle, cuando puedes expandirte por toda la ciudad...Animate!!!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../../../assets/img/servicio-3.svg" alt="" class="img-fluid m-x-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

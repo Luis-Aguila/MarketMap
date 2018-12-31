@@ -6,12 +6,17 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuardService } from './services/auth-guard.service';
+
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'nosotros', component: NosotrosComponent },
+    { path: 'servicios', component: ServiciosComponent },
+    { path: 'contacto', component: ContactoComponent },
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
     { path: 'dashboard', component: DashboardComponent, canActivate: [ AuthGuardService ]},

@@ -47,7 +47,6 @@
         });
     });
 </script>
-
 <script>
     //Iniciamos WOW
     var wow = new WOW({
@@ -67,13 +66,23 @@
     //Iniciamos Smoothscroll
     new SmoothScroll('a[href*="#"]').init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
-        offset: 60, // Integer. How far to offset the scrolling anchor location in pixels
+        offset: 85, // Integer. How far to offset the scrolling anchor location in pixels
     });
 
     /*---------------------------------
         OCULTAR Y MOSTRAR BOTON IR ARRIBA
      ----------------------------------*/
+    $(function() {
+        $(window).scroll(function() {
+            var scrolltop = $(this).scrollTop();
+            if (scrolltop >= 50) {
+                $(".ir-arriba").fadeIn();
+            } else {
+                $(".ir-arriba").fadeOut();
+            }
+        });
 
+    });
     /*---------------------------------
        CABECERA ANIMADA
      ----------------------------------*/
@@ -87,6 +96,10 @@
             nav.removeClass("fondo-menu");
         }
     });
+
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 
 </html>

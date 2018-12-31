@@ -31,7 +31,7 @@ body {
 }
 
 .encabezado.fondo-menu {
-    background: #064e4e;
+    background: #064E4E;
     padding: 1rem 0;
 }
 
@@ -236,7 +236,7 @@ body {
 .tu-mejor-eleccion ul li .far,
 .tu-mejor-eleccion ul li .fas {
     font-size: 2rem;
-    background: #009500;
+    background: #064E4E;
     border-radius: 50%;
     width: 4.7rem;
     height: 4.7rem;
@@ -357,7 +357,7 @@ body {
 
 .ultimos-proyectos .container .owl-carousel .owl-nav .owl-prev:hover,
 .ultimos-proyectos .container .owl-carousel .owl-nav .owl-next:hover {
-    color: #009500;
+    color: #064E4E;
 }
 
 .piedepagina {
@@ -443,7 +443,7 @@ body {
 }
 
 .paginas-internas .card-header:hover {
-    background: #009500;
+    background: #064E4E;
 }
 
 .paginas-internas .card-header .mb-0 .btn {
@@ -456,13 +456,13 @@ body {
 }
 
 .paginas-internas .lista-servicios {
-    background: #009500;
+    background: #064E4E;
 }
 
 .paginas-internas .lista-servicios .item-servicios {
     background: #fff;
     text-align: center;
-    border: 5px solid #057705;
+    border: 5px solid #064E4E;
     border-radius: 5px;
     margin-bottom: 1rem;
     padding: 1rem;
