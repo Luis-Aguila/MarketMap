@@ -10,21 +10,27 @@
     <tbody>
       <tr>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 1">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/angular.png" alt="Imagen 1">
         </td>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 2">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/html5.png" alt="Imagen 2">
         </td>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 3">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/Angular-maps.png" alt="Imagen 3">
         </td>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 4">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/auth0.png" alt="Imagen 4">
         </td>
       </tr><tr></tr>
       <tr>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 5">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/bootstrap.png" alt="Imagen 5">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/FontAwesome.png" alt="Imagen 6">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/GoogleFonts.png" alt="Imagen 7">
         </td>
       </tr><tr></tr>
     </tbody>
@@ -64,21 +70,21 @@
     <tbody>
       <tr>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 1">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/MarketMap/index1.PNG" alt="Imagen 1">
         </td>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 2">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/MarketMap/index2.PNG" alt="Imagen 2">
         </td>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 3">
-        </td>
-        <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 4">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/MarketMap/login.PNG" alt="Imagen 3">
         </td>
       </tr><tr></tr>
       <tr>
         <td align="center" valign="middle">
-          <img width="222px" src="" alt="Imagen 5">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/MarketMap/dashboard.PNG" alt="Imagen 4">
+        </td>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/MarketMap/indexrv.PNG" alt="Imagen 5">
         </td>
       </tr><tr></tr>
     </tbody>
