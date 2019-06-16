@@ -6,6 +6,29 @@
 <body>
 	<p align="center"><img src="https://github.com/Luis-Aguila/MarketMap/blob/master/src/assets/img/logo.png?raw=true" alt="Logo Proyecto" width="150px" height="150px"></p>
 	<h1 align="center">MarketMap</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 1">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 2">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 3">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 4">
+        </td>
+      </tr><tr></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 5">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 	<h3>Introducción</h3>
   <p>MarketMap, es un sistema de publicidad para empresas y pymes, en donde estas podran crear un perfil de negocio con sus respectivas caracteristicas y ubicarlo dentro de un mapa, en este perfil las empresas podran subir información de sus negocios, horario de atención, imagenes y ofertas, ademas estas podran ser vistas por otros usuarios</p>
 	<p>MarketMap, nace de la necesidad que tienen los pequeños y medianos emprendimientos o pymes, de darse a conocer en el mundo     comercial, mostrando de una manera digital su imagen, lo que venden y su ubicación, para que de esta manera puedan capturar la atención de sus futuros clientes, por otra parte, nace también de la necesidad que tienen los consumidores de encontrar aquellas cosas que necesitan de una manera más rápida, sencilla y fácil de acceder.</p>
@@ -37,7 +60,29 @@
 	<h3>Servicios</h3>
   <p>Se utilizo para la autentificación el servicio de Auth0 y los mapas desde AngularMap</p>
 	<h3>Vistas del sistema</h3>
-	<p>Imagenes</p>
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 1">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 2">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 3">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 4">
+        </td>
+      </tr><tr></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="" alt="Imagen 5">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 
 	
 
