@@ -1,4 +1,5 @@
 <div class="paginas-internas">
+    <!--Menu superior-->
     <section class="bienvenidos">
         <header class="encabezado fixed-top" role="banner" id="encabezado">
             <div class="container">
@@ -32,6 +33,7 @@
 
         </header>
         <div class="texto-encabezado text-center">
+            <!--Titulo de pagina-->
             <div class="container">
                 <h1 class="display-4 wow bounceIn">Nosotros</h1>
                 <p class="wow bounceIn" data-wow-delay=".3s">¿Quienes somos? y ¿Que hacemos?.</p>
@@ -41,6 +43,7 @@
     <section class="ruta py-1">
         <div class="container">
             <div class="row">
+                <!--Redirección a Home del sistema-->
                 <div class="col-12 text-right">
                     <a [routerLink]="['/home']">Inicio</a> » Nosotros
                 </div>
@@ -51,11 +54,12 @@
         <div class="container">
             <div class="row">
                 <article class="col-md-8">
+                    <!--Texto fijo-->
                     <h2>Trabajamos para tu éxito</h2>
                     <p>MARKETMAP apuesta por los emprendedores, nuestro sistema esta desarrollado pensando en las necesidades de de cada uno de ellos, ayudandolos a conseguir sus objetivos de mercado prindandoles un espacio para poder crecer como empresa.</p>
                     <p>Nuestro objetivo es conseguir que clientes y usuarios se sientan conectados al mundo que los rodea, funcionando como un servicio en el cual tanto usuarios como clientes se sientan beneficiados encontrando lo que buscan en el menor
                         tiempo posible</p>
-
+                    <!--Componente de acordeon para la mision, visión y los valores-->
                     <div id="accordion">
                         <div class="card">
                             <div class="card-header" id="headingOne">
@@ -114,6 +118,7 @@
             </div>
         </div>
     </main>
+    <!--Footer de pagina-->
     <footer class="piedepagina" role="contentinfo">
         <div class="container">
             <p>2018 © MARKETMAP Todos los derechos reservados</p>
@@ -136,5 +141,6 @@
             </ul>
         </div>
     </footer>
+    <!--Flecha de ir arriba, se muestra al perder el foco del menu-->
     <a class="ir-arriba" data-scroll href="nosotros#encabezado"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></a>
 </div>

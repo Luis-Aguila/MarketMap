@@ -9,14 +9,17 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./servicios.component.css']
 })
 export class ServiciosComponent implements OnInit {
-
+//Se crea una variable de tipo any vacia
   profile: any;
+  //Se inicializan las rutas y el servicio de Auth0
   constructor( private router: Router , public auth: AuthService) {
+    //Se analiza la autentificación
     auth.handleAuthentication();
   }
 
 
   ngOnInit() {
+    //Si el usuario esta autentificado, cargara los datos del usuario, si no lo esta, no los cargara
     if ( this.auth.isAuthenticated()) {
       if (this.auth.userProfile) {
         this.profile = this.auth.userProfile;
@@ -28,10 +31,11 @@ export class ServiciosComponent implements OnInit {
     }
   }
 
-
+//carga el la pagina de autentificación
   login() {
     this.auth.login();
   }
+  //Se cierra sesión
   salir() {
     this.auth.logout();
   }

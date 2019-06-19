@@ -1,4 +1,5 @@
 <section class="bienvenidos">
+    <!--Menu superior-->
     <header class="encabezado fixed-top" role="banner" id="encabezado">
         <div class="container">
             <a [routerLink]="['/home']" class="logo">
@@ -31,19 +32,21 @@
 
     </header>
     <div class="texto-encabezado text-center">
+        <!--Encabezado de pagina y titulo de la página Home-->
         <div class="container">
             <h1 class="display-4 wow bounceIn">Publicidad y Geolocalización para empresas</h1>
             <p class="wow bounceIn" data-wow-delay=".3s">Publicamos tu empresa o pyme ofreciendo servicios de geolocalización.</p>
             <a class="btn btn-primary btn-lg" (click)="login()">Iniciar Sesión</a>
         </div>
     </div>
+    <!--Flecha bajar a la sección de agencia-->
     <div class="flecha-bajar text-center">
         <a data-scroll href="home#agencia">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
     </div>
 </section>
-
+<!--Sección de agencia-->
 <section class="agencia py-1" id="agencia">
     <div class="container">
         <div class="row">
@@ -59,13 +62,16 @@
         </div>
     </div>
 </section>
-
+<!--Sección de porque somos tu mejor elección-->
 <section class="tu-mejor-eleccion py-1">
     <div class="container">
+        <!--titulo de sección-->
         <h2 class="h3 text-center font-weight-bold">¿Porqué somos <span>tu mejor elección?</span></h2>
         <p class="text-center">Expandimos los horizontes de tu negocio, llegando a donde tu quieres llegar.</p>
         <div class="row">
+            <!--Primera parte lateral Izquierda-->
             <ul class="col-6 col-lg-4 text-center text-lg-left">
+                <!--Efectos wow de acercamiento-->
                 <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".3s">
                     <i class="fa fa-briefcase" aria-hidden="true"></i>
                     <div class="contenedor-eleccion">
@@ -88,9 +94,11 @@
                     </div>
                 </li>
             </ul>
+            <!--Imagen central-->
             <div class="d-none d-lg-block col-lg-4">
                 <img src="../../../assets/img/mundo.svg" alt="Mundo-movil">
             </div>
+            <!--Parte lateral derecha-->
             <ul class="col-6 col-lg-4 text-center text-lg-right">
                 <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".9s">
                     <i class="far fa-calendar-alt" aria-hidden="true"></i>
@@ -117,22 +125,27 @@
         </div>
     </div>
 </section>
+<!--Sección de servicios-->
 <main class="servicios py-1">
     <div class="container">
+        <!--Tirulo de sección-->
         <h2 class="h2 text-center font-weight-bold">Nuestros Servicios</h2>
         <div class="row">
+            <!--Sección lateral izquierda-->
             <article class="col-md-4 wow bounceInLeft" data-wow-delay=".3s">
                 <img src="../../../assets/img/servicio-1.svg" alt="Servicio Desarrollo de Aplicaciones Mobiles">
                 <h3><a href="#">Publicación de negocios y pymes</a></h3>
                 <p class="d-none d-md-flex">Si tienes un emprendimiento y quieres llegar a más personas, publicamos tu negocio en nuestro sistema ofreciendote un perfil para que publiques lo que desees</p>
                 <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
             </article>
+            <!--Sección central-->
             <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
                 <img src="../../../assets/img/servicio-2.svg" alt="Servicio Consultoría Tecnológica">
                 <h3><a href="#">Visualización de Negocios</a></h3>
                 <p class="d-none d-md-flex">Si no tienes un negocio, pero necesitas encontrarlos, te ofrecemos visualizar todos los negocios que se encuentren dentro de tu zona y buscar los que necesites</p>
                 <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
             </article>
+            <!--Sección lateral derecha-->
             <article class="col-md-4 wow bounceInRight">
                 <img src="../../../assets/img/servicio-3.svg" alt="Servicio Marketing y publicidad Movil">
                 <h3><a href="#">Geolocalización para tu negocio</a></h3>
@@ -142,10 +155,11 @@
         </div>
     </div>
 </main>
-
+<!--Seccióon últimos proyectos-->
 <section class="ultimos-proyectos py-1">
     <div class="container">
         <h2 class="text-center font-weight-bold">MarketMap</h2>
+        <!--Carrolusel de imágenes-->
         <div class="owl-carousel">
             <a href="#">
                 <h4>Negocios cerca de tí</h4>
@@ -174,7 +188,7 @@
         </div>
     </div>
 </section>
-
+<!--Footer de página-->
 <footer class="piedepagina" role="contentinfo">
     <div class="container">
         <p>2018 © MARKETMAP Todos los derechos reservados</p>
@@ -197,6 +211,7 @@
         </ul>
     </div>
 </footer>
+<!--Flecha de ir arriba-->
 <a class="ir-arriba" data-scroll href="home#encabezado">
     <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>
 </a>

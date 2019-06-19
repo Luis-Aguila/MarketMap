@@ -10,12 +10,13 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+//Se crea una variable de tipo any vacia
   profile: any;
-
+//Se inicializan las rutas y el servicio de Auth0
   constructor( private router: Router , public auth: AuthService) {}
 
   ngOnInit() {
+    //Si el usuario esta autentificado, cargara los datos del usuario, si no lo esta, no los cargara
     if (this.auth.userProfile) {
       this.profile = this.auth.userProfile;
     } else {
@@ -24,7 +25,7 @@ export class DashboardComponent implements OnInit {
       });
     }
   }
-
+//Se cierra sesión
   salir() {
     this.auth.logout();
   }
