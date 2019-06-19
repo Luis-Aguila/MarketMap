@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Base y metas-->
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--Carga de estilos y fuentes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>MARKETMAP | Publicación y geolocalización para empresas.</title>
+
+</head>
+<!--Se cargarán las páginas de manera dinámica-->
+
+<body>
+    <app-root></app-root>
+</body>
+<!--Carga de scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.1.3/smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!--Script para el carrousel-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoWidth: false,
+            navText: ['<i class="fa fa-arrow-circle-left" title="Anterior"></i>', '<i class="fa  fa-arrow-circle-right" title="Siguiente"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 20
+                },
+                800: {
+                    items: 3,
+                    margin: 20
+                },
+                1000: {
+                    items: 4,
+                    margin: 20
+                }
+            }
+        });
+    });
+</script>
+<!--Script de woow-->
+<script>
+    //Iniciamos WOW
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+    });
+    wow.init();
+
+    //Iniciamos Smoothscroll
+    new SmoothScroll('a[href*="#"]').init({
+        speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+        offset: 85, // Integer. How far to offset the scrolling anchor location in pixels
+    });
+
+    /*---------------------------------
+        OCULTAR Y MOSTRAR BOTON IR ARRIBA
+     ----------------------------------*/
+    $(function() {
+        $(window).scroll(function() {
+            var scrolltop = $(this).scrollTop();
+            if (scrolltop >= 50) {
+                $(".ir-arriba").fadeIn();
+            } else {
+                $(".ir-arriba").fadeOut();
+            }
+        });
+
+    });
+    /*---------------------------------
+       CABECERA ANIMADA
+     ----------------------------------*/
+    $(window).scroll(function() {
+        var nav = $('.encabezado');
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            nav.addClass("fondo-menu");
+        } else {
+            nav.removeClass("fondo-menu");
+        }
+    });
+
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+</html>

@@ -1,0 +1,217 @@
+<section class="bienvenidos">
+    <!--Menu superior-->
+    <header class="encabezado fixed-top" role="banner" id="encabezado">
+        <div class="container">
+            <a [routerLink]="['/home']" class="logo">
+                <img src="../../../assets/img/logo.png" width="40px" height="30px" alt="Logo del titulo">
+            </a>
+            <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav id="menu-principal" class="collapse">
+                <ul>
+                    <li routerLinkActive="active"><a [routerLink]="['/home']">Inicio</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/nosotros']">Nosotros</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/servicios']">Servicios</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/contacto']">Contacto</a></li>
+                    <li routerLinkActive="active" *ngIf="auth.isAuthenticated()"><a [routerLink]="['/dashboard']">Dashboard</a></li>
+                    <li class="nav-item dropdown" *ngIf="auth.isAuthenticated()">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ profile?.given_name }}</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Perfil</a>
+                            <a class="dropdown-item" (click)="salir()">Salir</a>
+                        </div>
+                    </li>
+                    <li *ngIf="auth.isAuthenticated()">
+                        <a class="perfil"><img src="{{profile?.picture}}" width="30px" height="30px" alt="Perfil usuario" style="border-radius: 50%"></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="texto-encabezado text-center">
+        <!--Encabezado de pagina y titulo de la página Home-->
+        <div class="container">
+            <h1 class="display-4 wow bounceIn">Publicidad y Geolocalización para empresas</h1>
+            <p class="wow bounceIn" data-wow-delay=".3s">Publicamos tu empresa o pyme ofreciendo servicios de geolocalización.</p>
+            <a class="btn btn-primary btn-lg" (click)="login()">Iniciar Sesión</a>
+        </div>
+    </div>
+    <!--Flecha bajar a la sección de agencia-->
+    <div class="flecha-bajar text-center">
+        <a data-scroll href="home#agencia">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<!--Sección de agencia-->
+<section class="agencia py-1" id="agencia">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-xl-9 wow bounceIn" data-wow-delay=".3s">
+                <h2 class="h3 text-center text-md-left font-weight-bold">Publicidad y Geolocalización para empresas</h2>
+                <p>MARKETMAP te ofrece un espacio publicitario para llevar a cabo tu emprendimiento, ofreciendote herramientas de localización dentro de tu zona para asi expandir tu clientela</p>
+                <P>Ponemos a tu disposición un servicio acordes a tus necesidades, en donde podrás publicar de una manera innovadora tus productos y mediante nuestro sistema de geolocalización podras decirles a tus futuros clientes el lugar en donde trabajarás,
+                    tu horario de atención, tus ofertas y todo lo que quieras ofrecer...Tu negocio, al alcance de todos.</P>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 wow bounceIn" data-wow-delay=".6s">
+                <img src="../../../assets/img/agencia.svg" alt="La agencia">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Sección de porque somos tu mejor elección-->
+<section class="tu-mejor-eleccion py-1">
+    <div class="container">
+        <!--titulo de sección-->
+        <h2 class="h3 text-center font-weight-bold">¿Porqué somos <span>tu mejor elección?</span></h2>
+        <p class="text-center">Expandimos los horizontes de tu negocio, llegando a donde tu quieres llegar.</p>
+        <div class="row">
+            <!--Primera parte lateral Izquierda-->
+            <ul class="col-6 col-lg-4 text-center text-lg-left">
+                <!--Efectos wow de acercamiento-->
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".3s">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Publicación de Negocios</h4>
+                        <p class="d-none d-lg-flex">Publicamos tu emprendimiento y lo mostramos al mundo entero.</p>
+                    </div>
+                </li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".5">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Visualización</h4>
+                        <p class="d-none d-lg-flex">Podras visualizar todos los negocios que se encuentren en tu zona.</p>
+                    </div>
+                </li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".7s">
+                    <i class="far fa-comment" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Expandimos tu Clientela</h4>
+                        <p class="d-none d-lg-flex">Atraemos a clientes de toda tu ciudad, tú pon las ofertas.</p>
+                    </div>
+                </li>
+            </ul>
+            <!--Imagen central-->
+            <div class="d-none d-lg-block col-lg-4">
+                <img src="../../../assets/img/mundo.svg" alt="Mundo-movil">
+            </div>
+            <!--Parte lateral derecha-->
+            <ul class="col-6 col-lg-4 text-center text-lg-right">
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".9s">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Tus mejores Ofertas</h4>
+                        <p class="d-none d-lg-flex">Publicamos lo que vendes y mostramos lo que quieres.</p>
+                    </div>
+                </li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.1s">
+                    <i class="far fa-check-square" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Personaliza tu Negocio</h4>
+                        <p class="d-none d-lg-flex">Crea tu perfil y dale tu toque, tus gustos atraeran a más clientes.</p>
+                    </div>
+                </li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.3s">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <div class="contenedor-eleccion">
+                        <h4>Aumentamos tus ganancias</h4>
+                        <p class="d-none d-lg-flex">Una gran cantidad de clientes, estarán disponibles y atentos a tus ofertas.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--Sección de servicios-->
+<main class="servicios py-1">
+    <div class="container">
+        <!--Tirulo de sección-->
+        <h2 class="h2 text-center font-weight-bold">Nuestros Servicios</h2>
+        <div class="row">
+            <!--Sección lateral izquierda-->
+            <article class="col-md-4 wow bounceInLeft" data-wow-delay=".3s">
+                <img src="../../../assets/img/servicio-1.svg" alt="Servicio Desarrollo de Aplicaciones Mobiles">
+                <h3><a href="#">Publicación de negocios y pymes</a></h3>
+                <p class="d-none d-md-flex">Si tienes un emprendimiento y quieres llegar a más personas, publicamos tu negocio en nuestro sistema ofreciendote un perfil para que publiques lo que desees</p>
+                <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+            </article>
+            <!--Sección central-->
+            <article class="col-md-4 wow bounceInUp" data-wow-delay=".5s">
+                <img src="../../../assets/img/servicio-2.svg" alt="Servicio Consultoría Tecnológica">
+                <h3><a href="#">Visualización de Negocios</a></h3>
+                <p class="d-none d-md-flex">Si no tienes un negocio, pero necesitas encontrarlos, te ofrecemos visualizar todos los negocios que se encuentren dentro de tu zona y buscar los que necesites</p>
+                <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+            </article>
+            <!--Sección lateral derecha-->
+            <article class="col-md-4 wow bounceInRight">
+                <img src="../../../assets/img/servicio-3.svg" alt="Servicio Marketing y publicidad Movil">
+                <h3><a href="#">Geolocalización para tu negocio</a></h3>
+                <p class="d-none d-md-flex">Con nuestro sistema de geolocalización, todos sabrán donde ofreces tus productos y cuales son tus ofertas, atrayendo un mayor numero de clientes.</p>
+                <a href="#" class="btn btn-light d-none d-md-flex">Más Información</a>
+            </article>
+        </div>
+    </div>
+</main>
+<!--Seccióon últimos proyectos-->
+<section class="ultimos-proyectos py-1">
+    <div class="container">
+        <h2 class="text-center font-weight-bold">MarketMap</h2>
+        <!--Carrolusel de imágenes-->
+        <div class="owl-carousel">
+            <a href="#">
+                <h4>Negocios cerca de tí</h4>
+                <img src="../../../assets/img/proyecto1.jpg" alt="Proyecto App Lima Travels">
+            </a>
+            <a href="#">
+                <h4>Encuentra lo que buscas</h4>
+                <img src="../../../assets/img/proyecto2.jpg" alt="Proyecto Apps Uber">
+            </a>
+            <a href="#">
+                <h4>Pymes y Negocios</h4>
+                <img src="../../../assets/img/proyecto3.jpg" alt="Proyecto App Pizza Perú">
+            </a>
+            <a href="#">
+                <h4>Innovación a tu alcance</h4>
+                <img src="../../../assets/img/proyecto4.jpg" alt="Proyecto App Muebles Hoy">
+            </a>
+            <a href="#">
+                <h4>Explande tu clientela</h4>
+                <img src="../../../assets/img/proyecto5.jpg" alt="Proyecto App Clima Perú">
+            </a>
+            <a href="#">
+                <h4>Tus clientes te esperan</h4>
+                <img src="../../../assets/img/proyecto6.jpg" alt="Proyecto App Playa">
+            </a>
+        </div>
+    </div>
+</section>
+<!--Footer de página-->
+<footer class="piedepagina" role="contentinfo">
+    <div class="container">
+        <p>2018 © MARKETMAP Todos los derechos reservados</p>
+        <ul class="redes-sociales">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--Flecha de ir arriba-->
+<a class="ir-arriba" data-scroll href="home#encabezado">
+    <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>
+</a>
