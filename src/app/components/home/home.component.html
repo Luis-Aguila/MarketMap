@@ -19,7 +19,6 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ profile?.given_name }}</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#!">Perfil</a>
-                            <a class="dropdown-item" (click)="salir()">Salir</a>
                         </div>
                     </li>
                     <li *ngIf="auth.isAuthenticated()">
